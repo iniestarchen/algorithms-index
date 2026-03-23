@@ -1,0 +1,80 @@
+{
+  "version": "1.0",
+  "description": "Defines valid industry and technique labels for algorithm classification. Auto-index validates algorithm.json tags against this taxonomy.",
+
+  "industries": {
+    "education": {
+      "label": "Fundamentals & Education",
+      "description": "Core quantum concepts, textbook algorithms, learning exercises"
+    },
+    "finance": {
+      "label": "Finance & Banking",
+      "description": "Portfolio optimization, option pricing, risk analysis, credit scoring"
+    },
+    "chemistry": {
+      "label": "Chemistry & Molecular",
+      "description": "Molecular simulation, ground state energy, reaction pathways"
+    },
+    "optimization": {
+      "label": "Optimization & Operations Research",
+      "description": "Combinatorial optimization, graph problems, constraint satisfaction"
+    },
+    "cryptography": {
+      "label": "Cryptography & Security",
+      "description": "QKD protocols, quantum random number generation, PQC demonstrations"
+    },
+    "logistics": {
+      "label": "Logistics & Supply Chain",
+      "description": "Vehicle routing, job scheduling, supply chain optimization"
+    },
+    "pharma": {
+      "label": "Pharma & Healthcare",
+      "description": "Drug discovery, molecular docking, protein folding"
+    },
+    "materials": {
+      "label": "Materials Science",
+      "description": "Band structure, lattice models, condensed matter simulation"
+    },
+    "ml": {
+      "label": "Quantum Machine Learning",
+      "description": "Quantum kernels, classifiers, generative models, feature maps"
+    },
+    "energy": {
+      "label": "Energy & Sustainability",
+      "description": "Grid optimization, battery simulation, carbon capture modeling"
+    },
+    "telecom": {
+      "label": "Telecommunications",
+      "description": "Network optimization, channel coding, resource allocation"
+    }
+  },
+
+  "techniques": {
+    "gate": {
+      "label": "Gate-Based Circuit",
+      "description": "Standard quantum circuit with discrete gates"
+    },
+    "vqa": {
+      "label": "Variational (VQA)",
+      "description": "Variational quantum algorithms — parameterized circuits + classical optimizer"
+    },
+    "annealing": {
+      "label": "Quantum Annealing",
+      "description": "QUBO/Ising optimization via quantum or simulated annealing"
+    },
+    "qec": {
+      "label": "Quantum Error Correction",
+      "description": "Error correcting codes, syndrome decoding, fault tolerance"
+    },
+    "analog": {
+      "label": "Analog Hamiltonian",
+      "description": "Continuous Hamiltonian evolution, Rydberg simulation"
+    },
+    "classical": {
+      "label": "Classical Baseline",
+      "description": "Classical solvers for comparison (exact diag, brute-force)"
+    }
+  },
+
+  "difficulty_levels": ["beginner", "intermediate", "advanced"]
+}

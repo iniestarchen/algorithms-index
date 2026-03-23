@@ -1,0 +1,171 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "OpenQC Algorithm Entry",
+  "description": "Schema for algorithm.json files in openqc algorithm repos. Each algorithm repo must have a valid algorithm.json at its root.",
+  "type": "object",
+  "required": ["slug", "name", "description", "qubit_count", "tags", "industries", "techniques"],
+  "properties": {
+    "slug": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9-]*[a-z0-9]$",
+      "description": "URL-safe unique identifier. Must match the repo name suffix (algo-{slug})."
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Human-readable algorithm name."
+    },
+    "version": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+\\.\\d+$",
+      "default": "1.0.0",
+      "description": "Semver version string."
+    },
+    "author": {
+      "type": "string",
+      "description": "GitHub username or organization that maintains this algorithm."
+    },
+    "license": {
+      "type": "string",
+      "default": "Apache-2.0",
+      "description": "SPDX license identifier."
+    },
+    "description": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Brief description of the algorithm (1-2 sentences)."
+    },
+
+    "industries": {
+      "type": "array",
+      "items": { "type": "string" },
+      "minItems": 1,
+      "description": "Industry/domain tags. Must match values in TAXONOMY.json. Examples: education, finance, chemistry, optimization, cryptography, logistics, pharma, materials, ml, energy."
+    },
+    "techniques": {
+      "type": "array",
+      "items": { "type": "string" },
+      "minItems": 1,
+      "description": "Quantum computing technique tags. Must match values in TAXONOMY.json. Examples: gate, vqa, annealing, qec, analog, classical."
+    },
+    "difficulty": {
+      "type": "string",
+      "enum": ["beginner", "intermediate", "advanced"],
+      "default": "intermediate",
+      "description": "Difficulty level for the target user."
+    },
+    "computation_model": {
+      "type": "string",
+      "enum": ["gate", "annealing", "analog", "classical"],
+      "default": "gate",
+      "description": "Hardware computation model required."
+    },
+    "algorithm_type": {
+      "type": "string",
+      "enum": ["circuit", "vqa", "annealing", "classical", "qkd", "protocol", "analog"],
+      "default": "circuit",
+      "description": "Execution type — determines job routing and result format."
+    },
+    "qubit_count": {
+      "type": "integer",
+      "minimum": 1,
+      "description": "Number of qubits (or problem variables for annealing/classical)."
+    },
+    "min_qubits": {
+      "type": "integer",
+      "minimum": 1,
+      "description": "Minimum qubits needed. For scalable algorithms, this is the smallest useful size."
+    },
+    "recommended_backends": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Suggested simulator profiles. Examples: vortex-noiseless, vortex-ibm-heron-like."
+    },
+    "tags": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Free-form searchable tags."
+    },
+
+    "access": {
+      "type": "string",
+      "enum": ["open", "gated", "paid"],
+      "default": "open",
+      "description": "Access tier. open = full code in repo. gated = metadata only, request access. paid = metadata only, pay to run."
+    },
+    "access_reason": {
+      "type": "string",
+      "description": "Why this algorithm is gated/paid (shown to users requesting access)."
+    },
+    "pricing": {
+      "type": "object",
+      "description": "Pricing for paid algorithms.",
+      "properties": {
+        "model": {
+          "type": "string",
+          "enum": ["per_run", "monthly"],
+          "description": "Pricing model."
+        },
+        "price_usd": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Price in USD."
+        },
+        "trial_runs": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Number of free trial runs before payment required."
+        }
+      }
+    },
+
+    "source": {
+      "type": "string",
+      "enum": ["official", "community"],
+      "default": "community",
+      "description": "Whether this algorithm is maintained by the openqc team or a community contributor."
+    },
+
+    "circuit_qasm": {
+      "type": "string",
+      "description": "QASM 2.0 circuit source code. Omitted for paid/gated algorithms."
+    },
+    "template_code": {
+      "type": "string",
+      "description": "Python source for build() + interpret(). Omitted for paid/gated algorithms."
+    },
+    "input_schema": {
+      "type": "object",
+      "description": "JSON Schema for algorithm input parameters."
+    },
+    "output_schema": {
+      "type": "object",
+      "description": "JSON Schema for algorithm output."
+    },
+
+    "status": {
+      "type": "string",
+      "enum": ["available", "coming-soon", "experimental", "deprecated"],
+      "default": "available"
+    },
+    "category": {
+      "type": "string",
+      "description": "Legacy category field (for backward compat with existing JSON files)."
+    },
+    "domain": {
+      "type": "string",
+      "description": "Legacy domain field (use industries[] instead)."
+    },
+    "blockers": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Dependencies preventing materialization. Used with status: coming-soon."
+    },
+    "metadata": {
+      "type": "object",
+      "description": "Optional metadata (complexity, year, references, etc.).",
+      "additionalProperties": true
+    }
+  },
+  "additionalProperties": true
+}
