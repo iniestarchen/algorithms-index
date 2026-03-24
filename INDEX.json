@@ -1,5 +1,801 @@
 {
-  "generated_at": "2026-03-24T00:28:32.254719+00:00",
-  "total": 0,
-  "algorithms": []
+  "generated_at": "2026-03-24T02:28:15.319489+00:00",
+  "total": 30,
+  "algorithms": [
+    {
+      "slug": "amplitude-estimation",
+      "repo": "iniestarchen/amplitude-estimation",
+      "name": "Amplitude Estimation",
+      "author": "iniestarchen",
+      "version": "1.0.0",
+      "access": "open",
+      "industries": [
+        "finance",
+        "education"
+      ],
+      "techniques": [
+        "gate"
+      ],
+      "difficulty": "advanced",
+      "computation_model": "gate",
+      "qubit_count": 4,
+      "description": "Estimate the amplitude a using 3 precision qubits via quantum phase estimation.",
+      "tags": [
+        "amplitude-estimation",
+        "qpe",
+        "monte-carlo"
+      ],
+      "source": "official",
+      "stars": 0,
+      "last_updated": "2026-03-23T09:43:40Z"
+    },
+    {
+      "slug": "bb84-qkd",
+      "repo": "iniestarchen/quantum-key-distribution",
+      "name": "BB84 Quantum Key Distribution",
+      "author": "iniestarchen",
+      "version": "1.0.0",
+      "access": "open",
+      "industries": [
+        "cryptography"
+      ],
+      "techniques": [
+        "gate"
+      ],
+      "difficulty": "intermediate",
+      "computation_model": "gate",
+      "qubit_count": 1,
+      "description": "BB84 QKD protocol: Alice encodes bits in randomly chosen bases; Bob measures to establish shared secret key.",
+      "tags": [
+        "qkd",
+        "bb84",
+        "cryptography",
+        "key-distribution"
+      ],
+      "source": "official",
+      "stars": 0,
+      "last_updated": "2026-03-23T09:45:38Z"
+    },
+    {
+      "slug": "bernstein-vazirani",
+      "repo": "iniestarchen/bernstein-vazirani",
+      "name": "Bernstein-Vazirani Algorithm",
+      "author": "iniestarchen",
+      "version": "1.0.0",
+      "access": "open",
+      "industries": [
+        "education"
+      ],
+      "techniques": [
+        "gate"
+      ],
+      "difficulty": "beginner",
+      "computation_model": "gate",
+      "qubit_count": 4,
+      "description": "Recover a hidden binary string s=101 from f(x) = s*x (mod 2) in a single query.",
+      "tags": [
+        "bernstein-vazirani",
+        "oracle",
+        "hidden-string"
+      ],
+      "source": "official",
+      "stars": 0,
+      "last_updated": "2026-03-23T09:43:47Z"
+    },
+    {
+      "slug": "bit-flip-code",
+      "repo": "iniestarchen/bit-flip-code",
+      "name": "Bit-Flip Code",
+      "author": "iniestarchen",
+      "version": "1.0.0",
+      "access": "open",
+      "industries": [
+        "education"
+      ],
+      "techniques": [
+        "qec"
+      ],
+      "difficulty": "beginner",
+      "computation_model": "gate",
+      "qubit_count": 3,
+      "description": "3-qubit repetition code that encodes 1 logical qubit and corrects single bit-flip errors.",
+      "tags": [
+        "bit-flip",
+        "qec",
+        "repetition-code"
+      ],
+      "source": "official",
+      "stars": 0,
+      "last_updated": "2026-03-23T09:43:55Z"
+    },
+    {
+      "slug": "cluster-state",
+      "repo": "iniestarchen/cluster-state",
+      "name": "Cluster State Preparation",
+      "author": "iniestarchen",
+      "version": "1.0.0",
+      "access": "open",
+      "industries": [
+        "education"
+      ],
+      "techniques": [
+        "gate"
+      ],
+      "difficulty": "intermediate",
+      "computation_model": "gate",
+      "qubit_count": 4,
+      "description": "Prepare a 4-qubit linear cluster state for measurement-based quantum computation.",
+      "tags": [
+        "cluster-state",
+        "mbqc",
+        "entanglement"
+      ],
+      "source": "official",
+      "stars": 0,
+      "last_updated": "2026-03-23T09:44:02Z"
+    },
+    {
+      "slug": "deutsch-jozsa",
+      "repo": "iniestarchen/deutsch-jozsa",
+      "name": "Deutsch-Jozsa Algorithm",
+      "author": "iniestarchen",
+      "version": "1.0.0",
+      "access": "open",
+      "industries": [
+        "education"
+      ],
+      "techniques": [
+        "gate"
+      ],
+      "difficulty": "beginner",
+      "computation_model": "gate",
+      "qubit_count": 4,
+      "description": "Determine whether a 3-bit Boolean function is constant or balanced in one query.",
+      "tags": [
+        "deutsch-jozsa",
+        "oracle",
+        "query-complexity"
+      ],
+      "source": "official",
+      "stars": 0,
+      "last_updated": "2026-03-23T09:44:08Z"
+    },
+    {
+      "slug": "entanglement-swapping",
+      "repo": "iniestarchen/quantum-teledata",
+      "name": "Entanglement Swapping",
+      "author": "iniestarchen",
+      "version": "1.0.0",
+      "access": "open",
+      "industries": [
+        "education"
+      ],
+      "techniques": [
+        "gate"
+      ],
+      "difficulty": "intermediate",
+      "computation_model": "gate",
+      "qubit_count": 4,
+      "description": "Create entanglement between two qubits that never directly interact, via entanglement swapping.",
+      "tags": [
+        "entanglement-swapping",
+        "teleportation",
+        "bell-state"
+      ],
+      "source": "official",
+      "stars": 0,
+      "last_updated": "2026-03-23T09:46:05Z"
+    },
+    {
+      "slug": "error-detection",
+      "repo": "iniestarchen/quantum-error-detection",
+      "name": "Quantum Error Detection",
+      "author": "iniestarchen",
+      "version": "1.0.0",
+      "access": "open",
+      "industries": [
+        "education"
+      ],
+      "techniques": [
+        "qec"
+      ],
+      "difficulty": "intermediate",
+      "computation_model": "gate",
+      "qubit_count": 4,
+      "description": "Detect any single-qubit error using 4 physical qubits encoding 2 logical qubits.",
+      "tags": [
+        "error-detection",
+        "qec",
+        "stabilizer"
+      ],
+      "source": "official",
+      "stars": 0,
+      "last_updated": "2026-03-23T09:45:18Z"
+    },
+    {
+      "slug": "ghz-secret-sharing",
+      "repo": "iniestarchen/quantum-dense-coding-ghz",
+      "name": "GHZ Secret Sharing",
+      "author": "iniestarchen",
+      "version": "1.0.0",
+      "access": "open",
+      "industries": [
+        "cryptography"
+      ],
+      "techniques": [
+        "gate"
+      ],
+      "difficulty": "intermediate",
+      "computation_model": "gate",
+      "qubit_count": 3,
+      "description": "3-party quantum secret sharing using a GHZ state: requires cooperation to recover secret.",
+      "tags": [
+        "ghz",
+        "secret-sharing",
+        "multiparty"
+      ],
+      "source": "official",
+      "stars": 0,
+      "last_updated": "2026-03-23T09:45:11Z"
+    },
+    {
+      "slug": "grover-search",
+      "repo": "iniestarchen/grover-search",
+      "name": "Grover's Search Algorithm",
+      "author": "iniestarchen",
+      "version": "1.0.0",
+      "access": "open",
+      "industries": [
+        "education",
+        "optimization"
+      ],
+      "techniques": [
+        "gate"
+      ],
+      "difficulty": "intermediate",
+      "computation_model": "gate",
+      "qubit_count": 2,
+      "description": "Quadratic speedup for unstructured search: finds target among N items in O(sqrt(N)) queries.",
+      "tags": [
+        "search",
+        "oracle",
+        "amplitude-amplification"
+      ],
+      "source": "official",
+      "stars": 0,
+      "last_updated": "2026-03-23T09:44:15Z"
+    },
+    {
+      "slug": "hadamard-test",
+      "repo": "iniestarchen/hadamard-test",
+      "name": "Hadamard Test",
+      "author": "iniestarchen",
+      "version": "1.0.0",
+      "access": "open",
+      "industries": [
+        "education"
+      ],
+      "techniques": [
+        "gate"
+      ],
+      "difficulty": "beginner",
+      "computation_model": "gate",
+      "qubit_count": 2,
+      "description": "Estimate Re(<psi|U|psi>) for U=Z gate using a single ancilla qubit.",
+      "tags": [
+        "hadamard-test",
+        "expectation-value",
+        "ancilla"
+      ],
+      "source": "official",
+      "stars": 0,
+      "last_updated": "2026-03-23T09:44:22Z"
+    },
+    {
+      "slug": "hhl-linear-solver",
+      "repo": "iniestarchen/hhl-algorithm",
+      "name": "HHL Algorithm",
+      "author": "iniestarchen",
+      "version": "1.0.0",
+      "access": "open",
+      "industries": [
+        "ml",
+        "optimization"
+      ],
+      "techniques": [
+        "gate"
+      ],
+      "difficulty": "advanced",
+      "computation_model": "gate",
+      "qubit_count": 4,
+      "description": "Solve Ax=b for a 2x2 system using the Harrow-Hassidim-Lloyd algorithm.",
+      "tags": [
+        "hhl",
+        "linear-algebra",
+        "matrix-inversion"
+      ],
+      "source": "official",
+      "stars": 0,
+      "last_updated": "2026-03-23T09:44:29Z"
+    },
+    {
+      "slug": "phase-flip-code",
+      "repo": "iniestarchen/phase-flip-code",
+      "name": "Phase-Flip Code",
+      "author": "iniestarchen",
+      "version": "1.0.0",
+      "access": "open",
+      "industries": [
+        "education"
+      ],
+      "techniques": [
+        "qec"
+      ],
+      "difficulty": "beginner",
+      "computation_model": "gate",
+      "qubit_count": 3,
+      "description": "3-qubit code that corrects single phase-flip (Z) errors by encoding in the X basis.",
+      "tags": [
+        "phase-flip",
+        "qec",
+        "repetition-code"
+      ],
+      "source": "official",
+      "stars": 0,
+      "last_updated": "2026-03-23T09:44:36Z"
+    },
+    {
+      "slug": "phase-kickback",
+      "repo": "iniestarchen/quantum-phase-kickback",
+      "name": "Phase Kickback",
+      "author": "iniestarchen",
+      "version": "1.0.0",
+      "access": "open",
+      "industries": [
+        "education"
+      ],
+      "techniques": [
+        "gate"
+      ],
+      "difficulty": "beginner",
+      "computation_model": "gate",
+      "qubit_count": 2,
+      "description": "Demonstrate the phase kickback trick: a CNOT with ancilla in |- > imprints a phase on the control qubit.",
+      "tags": [
+        "phase-kickback",
+        "ancilla",
+        "trick"
+      ],
+      "source": "official",
+      "stars": 0,
+      "last_updated": "2026-03-23T09:45:52Z"
+    },
+    {
+      "slug": "qaoa-maxcut",
+      "repo": "iniestarchen/qaoa-maxcut",
+      "name": "QAOA MaxCut",
+      "author": "iniestarchen",
+      "version": "1.0.0",
+      "access": "open",
+      "industries": [
+        "optimization"
+      ],
+      "techniques": [
+        "vqa"
+      ],
+      "difficulty": "intermediate",
+      "computation_model": "gate",
+      "qubit_count": 4,
+      "description": "Quantum Approximate Optimization Algorithm (p=1) for MaxCut on a graph.",
+      "tags": [
+        "qaoa",
+        "maxcut",
+        "optimization",
+        "variational"
+      ],
+      "source": "official",
+      "stars": 0,
+      "last_updated": "2026-03-23T09:44:43Z"
+    },
+    {
+      "slug": "qft",
+      "repo": "iniestarchen/quantum-fourier-transform",
+      "name": "Quantum Fourier Transform",
+      "author": "iniestarchen",
+      "version": "1.0.0",
+      "access": "open",
+      "industries": [
+        "education"
+      ],
+      "techniques": [
+        "gate"
+      ],
+      "difficulty": "intermediate",
+      "computation_model": "gate",
+      "qubit_count": 4,
+      "description": "4-qubit QFT: the quantum analogue of the discrete Fourier transform.",
+      "tags": [
+        "qft",
+        "fourier",
+        "subroutine"
+      ],
+      "source": "official",
+      "stars": 0,
+      "last_updated": "2026-03-23T09:45:32Z"
+    },
+    {
+      "slug": "qpe",
+      "repo": "iniestarchen/quantum-phase-estimation",
+      "name": "Quantum Phase Estimation",
+      "author": "iniestarchen",
+      "version": "1.0.0",
+      "access": "open",
+      "industries": [
+        "education"
+      ],
+      "techniques": [
+        "gate"
+      ],
+      "difficulty": "intermediate",
+      "computation_model": "gate",
+      "qubit_count": 4,
+      "description": "Estimate the eigenphase of the T gate using 3 counting qubits.",
+      "tags": [
+        "qpe",
+        "phase-estimation",
+        "eigenvalue"
+      ],
+      "source": "official",
+      "stars": 0,
+      "last_updated": "2026-03-23T09:45:45Z"
+    },
+    {
+      "slug": "qrng",
+      "repo": "iniestarchen/quantum-random",
+      "name": "Quantum Random Number Generator",
+      "author": "iniestarchen",
+      "version": "1.0.0",
+      "access": "open",
+      "industries": [
+        "cryptography"
+      ],
+      "techniques": [
+        "gate"
+      ],
+      "difficulty": "beginner",
+      "computation_model": "gate",
+      "qubit_count": 4,
+      "description": "Generate truly random bits using quantum superposition and measurement.",
+      "tags": [
+        "qrng",
+        "random",
+        "measurement"
+      ],
+      "source": "official",
+      "stars": 0,
+      "last_updated": "2026-03-23T09:45:58Z"
+    },
+    {
+      "slug": "quantum-adder",
+      "repo": "iniestarchen/quantum-adder",
+      "name": "Quantum Half-Adder",
+      "author": "iniestarchen",
+      "version": "1.0.0",
+      "access": "open",
+      "industries": [
+        "education"
+      ],
+      "techniques": [
+        "gate"
+      ],
+      "difficulty": "beginner",
+      "computation_model": "gate",
+      "qubit_count": 4,
+      "description": "Reversible quantum half-adder: computes sum and carry for 1-bit inputs using Toffoli gates.",
+      "tags": [
+        "adder",
+        "arithmetic",
+        "toffoli",
+        "reversible"
+      ],
+      "source": "official",
+      "stars": 0,
+      "last_updated": "2026-03-23T09:44:50Z"
+    },
+    {
+      "slug": "quantum-coin-flip",
+      "repo": "iniestarchen/quantum-coin-flipping",
+      "name": "Quantum Coin Flipping",
+      "author": "iniestarchen",
+      "version": "1.0.0",
+      "access": "open",
+      "industries": [
+        "cryptography"
+      ],
+      "techniques": [
+        "gate"
+      ],
+      "difficulty": "intermediate",
+      "computation_model": "gate",
+      "qubit_count": 2,
+      "description": "Fair coin flipping over a quantum channel: Alice and Bob each contribute randomness via entanglement.",
+      "tags": [
+        "coin-flipping",
+        "protocol",
+        "fairness"
+      ],
+      "source": "official",
+      "stars": 0,
+      "last_updated": "2026-03-23T09:44:57Z"
+    },
+    {
+      "slug": "quantum-counting",
+      "repo": "iniestarchen/quantum-counting",
+      "name": "Quantum Counting",
+      "author": "iniestarchen",
+      "version": "1.0.0",
+      "access": "open",
+      "industries": [
+        "education",
+        "optimization"
+      ],
+      "techniques": [
+        "gate"
+      ],
+      "difficulty": "advanced",
+      "computation_model": "gate",
+      "qubit_count": 4,
+      "description": "Count solutions to a 2-qubit oracle using QPE applied to Grover's operator.",
+      "tags": [
+        "counting",
+        "grover",
+        "qpe"
+      ],
+      "source": "official",
+      "stars": 0,
+      "last_updated": "2026-03-23T09:45:04Z"
+    },
+    {
+      "slug": "quantum-fingerprint",
+      "repo": "iniestarchen/quantum-fingerprinting",
+      "name": "Quantum Fingerprinting",
+      "author": "iniestarchen",
+      "version": "1.0.0",
+      "access": "open",
+      "industries": [
+        "cryptography",
+        "education"
+      ],
+      "techniques": [
+        "gate"
+      ],
+      "difficulty": "advanced",
+      "computation_model": "gate",
+      "qubit_count": 2,
+      "description": "Exponentially compress a classical string into a quantum fingerprint for equality testing.",
+      "tags": [
+        "fingerprinting",
+        "communication-complexity",
+        "exponential-compression"
+      ],
+      "source": "official",
+      "stars": 0,
+      "last_updated": "2026-03-23T09:45:25Z"
+    },
+    {
+      "slug": "quantum-walk",
+      "repo": "iniestarchen/quantum-walk",
+      "name": "Discrete Quantum Walk",
+      "author": "iniestarchen",
+      "version": "1.0.0",
+      "access": "open",
+      "industries": [
+        "education"
+      ],
+      "techniques": [
+        "gate"
+      ],
+      "difficulty": "intermediate",
+      "computation_model": "gate",
+      "qubit_count": 3,
+      "description": "2-step discrete quantum walk on a 4-node cycle using Hadamard coin.",
+      "tags": [
+        "quantum-walk",
+        "graph",
+        "coin-operator"
+      ],
+      "source": "official",
+      "stars": 0,
+      "last_updated": "2026-03-23T09:46:12Z"
+    },
+    {
+      "slug": "shor-code",
+      "repo": "iniestarchen/shor-nine-qubit",
+      "name": "Shor's 9-Qubit Code",
+      "author": "iniestarchen",
+      "version": "1.0.0",
+      "access": "open",
+      "industries": [
+        "education"
+      ],
+      "techniques": [
+        "qec"
+      ],
+      "difficulty": "advanced",
+      "computation_model": "gate",
+      "qubit_count": 9,
+      "description": "First quantum error-correcting code: encodes 1 logical qubit into 9 physical qubits.",
+      "tags": [
+        "shor-code",
+        "qec",
+        "concatenated"
+      ],
+      "source": "official",
+      "stars": 0,
+      "last_updated": "2026-03-23T09:46:27Z"
+    },
+    {
+      "slug": "shor-period-finding",
+      "repo": "iniestarchen/shor-period-finding",
+      "name": "Shor's Period Finding",
+      "author": "iniestarchen",
+      "version": "1.0.0",
+      "access": "open",
+      "industries": [
+        "cryptography",
+        "education"
+      ],
+      "techniques": [
+        "gate"
+      ],
+      "difficulty": "advanced",
+      "computation_model": "gate",
+      "qubit_count": 4,
+      "description": "Core period-finding subroutine of Shor's algorithm: find the period r of f(x) = 7^x mod 15.",
+      "tags": [
+        "shor",
+        "factoring",
+        "period-finding"
+      ],
+      "source": "official",
+      "stars": 0,
+      "last_updated": "2026-03-23T09:46:34Z"
+    },
+    {
+      "slug": "simons-algorithm",
+      "repo": "iniestarchen/simons-algorithm",
+      "name": "Simon's Algorithm",
+      "author": "iniestarchen",
+      "version": "1.0.0",
+      "access": "open",
+      "industries": [
+        "education"
+      ],
+      "techniques": [
+        "gate"
+      ],
+      "difficulty": "intermediate",
+      "computation_model": "gate",
+      "qubit_count": 4,
+      "description": "Find the hidden period s=11 of a 2-to-1 function with exponential quantum speedup.",
+      "tags": [
+        "simon",
+        "period-finding",
+        "exponential-speedup"
+      ],
+      "source": "official",
+      "stars": 0,
+      "last_updated": "2026-03-23T09:46:41Z"
+    },
+    {
+      "slug": "steane-code",
+      "repo": "iniestarchen/steane-seven-qubit",
+      "name": "Steane [[7,1,3]] Code",
+      "author": "iniestarchen",
+      "version": "1.0.0",
+      "access": "open",
+      "industries": [
+        "education"
+      ],
+      "techniques": [
+        "qec"
+      ],
+      "difficulty": "advanced",
+      "computation_model": "gate",
+      "qubit_count": 7,
+      "description": "First CSS code: encodes 1 logical qubit in 7 physical qubits, corrects any single-qubit error.",
+      "tags": [
+        "steane",
+        "css-code",
+        "qec",
+        "error-correction"
+      ],
+      "source": "official",
+      "stars": 0,
+      "last_updated": "2026-03-23T09:46:49Z"
+    },
+    {
+      "slug": "swap-test",
+      "repo": "iniestarchen/swap-test",
+      "name": "SWAP Test",
+      "author": "iniestarchen",
+      "version": "1.0.0",
+      "access": "open",
+      "industries": [
+        "education",
+        "ml"
+      ],
+      "techniques": [
+        "gate"
+      ],
+      "difficulty": "beginner",
+      "computation_model": "gate",
+      "qubit_count": 3,
+      "description": "Measure state overlap between two quantum states using a Fredkin gate.",
+      "tags": [
+        "swap-test",
+        "fidelity",
+        "state-comparison"
+      ],
+      "source": "official",
+      "stars": 0,
+      "last_updated": "2026-03-23T09:46:55Z"
+    },
+    {
+      "slug": "trotter-ising",
+      "repo": "iniestarchen/trotter-ising",
+      "name": "Trotter-Ising Simulation",
+      "author": "iniestarchen",
+      "version": "1.0.0",
+      "access": "open",
+      "industries": [
+        "materials",
+        "chemistry"
+      ],
+      "techniques": [
+        "gate",
+        "analog"
+      ],
+      "difficulty": "advanced",
+      "computation_model": "gate",
+      "qubit_count": 4,
+      "description": "One first-order Trotter step simulating the 1D transverse-field Ising model on 4 qubits.",
+      "tags": [
+        "trotter",
+        "ising",
+        "hamiltonian-simulation",
+        "condensed-matter"
+      ],
+      "source": "official",
+      "stars": 0,
+      "last_updated": "2026-03-23T09:47:02Z"
+    },
+    {
+      "slug": "vqe-ansatz",
+      "repo": "iniestarchen/vqe-ansatz",
+      "name": "VQE Hardware-Efficient Ansatz",
+      "author": "iniestarchen",
+      "version": "1.0.0",
+      "access": "open",
+      "industries": [
+        "chemistry"
+      ],
+      "techniques": [
+        "vqa"
+      ],
+      "difficulty": "intermediate",
+      "computation_model": "gate",
+      "qubit_count": 4,
+      "description": "4-qubit hardware-efficient variational ansatz for VQE with Ry-Rz-CNOT layers.",
+      "tags": [
+        "vqe",
+        "variational",
+        "ansatz",
+        "chemistry"
+      ],
+      "source": "official",
+      "stars": 0,
+      "last_updated": "2026-03-23T09:47:09Z"
+    }
+  ]
 }
