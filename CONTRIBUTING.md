@@ -11,7 +11,14 @@ Thank you for contributing! Every algorithm makes quantum computing more accessi
 3. Fill in `algorithm.json`, `circuit.qasm`, `template.py`, `README.md`
 4. Push your changes
 5. Submit a PR to [iniestarchen/algorithms-index](https://github.com/iniestarchen/algorithms-index):
-   - Add your repo to `SUBMISSIONS.json`
+   - Edit `SUBMISSIONS.json` and add your repo to the `community_repos` array:
+   ```json
+   {
+     "community_repos": [
+       {"repo": "your-username/your-repo-name", "submitted_by": "your-username", "submitted_at": "2026-03-24"}
+     ]
+   }
+   ```
 6. CI validates your algorithm automatically
 7. Maintainer reviews → merge → your algorithm appears on the platform!
 
@@ -20,7 +27,11 @@ Thank you for contributing! Every algorithm makes quantum computing more accessi
 Already have a quantum algorithm repo? Just add `algorithm.json` to the root:
 
 1. Create `algorithm.json` in your repo root following [schema.json](https://github.com/iniestarchen/algorithms-index/blob/main/schema.json)
-2. Submit a PR to [iniestarchen/algorithms-index](https://github.com/iniestarchen/algorithms-index) adding your repo to `SUBMISSIONS.json`
+2. Submit a PR to [iniestarchen/algorithms-index](https://github.com/iniestarchen/algorithms-index):
+   - Edit `SUBMISSIONS.json` and add your repo:
+   ```json
+   {"repo": "your-username/your-repo-name", "submitted_by": "your-username", "submitted_at": "2026-03-24"}
+   ```
 3. That's it — your repo stays under your account
 
 ## algorithm.json Requirements
